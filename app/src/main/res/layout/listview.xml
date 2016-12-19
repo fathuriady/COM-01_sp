@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="100dp"
@@ -22,14 +22,17 @@
     <TextView
         android:id="@+id/txtDesc"
         android:layout_width="310dp"
-        android:layout_height="55dp"
-        android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        android:layout_height="50dp"
+        android:text="Desc"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txtJudulItem"
+        />
 
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_gravity="right"
-
-
+        android:layout_toRightOf="@+id/txtJudulItem"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/arrow_down_float"
         />
-</LinearLayout>
+</RelativeLayout>
